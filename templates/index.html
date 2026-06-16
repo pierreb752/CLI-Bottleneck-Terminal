@@ -136,18 +136,18 @@
   <div class="dot"></div>
   <div class="dot"></div>
   <div class="dot"></div>
-  <span class="title">Window and Door Production Floor &mdash; Production Bottleneck Terminal</span>
+  <span class="title">Window and Door Production Floor &mdash; Bottleneck Terminal</span>
 </div>
 
 <div id="terminal">
-  <div class="line system">Window and Door Production Floor Operations Terminal v1.0</div>
+  <div class="line system">Window and Door Production Floor Terminal v1.0</div>
   <div class="line system">Type "help" or "list" to see all operations. Type "clear" to reset.</div>
   <div class="line separator">──────────────────────────────────────────────────────</div>
   <div class="line">&nbsp;</div>
 </div>
 
 <div id="input-row">
-  <span id="prompt">Window and Door Production Floor&gt;&nbsp;</span>
+  <span id="prompt">production&gt;&nbsp;</span>
   <input id="input" type="text" autocomplete="off" spellcheck="false" autofocus placeholder="Enter operation name or number..." />
 </div>
 
@@ -174,7 +174,7 @@
   }
 
   async function sendQuery(message) {
-    appendLine(`Window and Door Production Floor> ${message}`, 'input-echo');
+    appendLine(`production> ${message}`, 'input-echo');
 
     const res = await fetch('/query', {
       method: 'POST',
