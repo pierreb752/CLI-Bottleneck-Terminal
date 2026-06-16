@@ -115,7 +115,7 @@ def query():
     lower = user_input.lower()
 
     if any(phrase in lower for phrase in ['top bottleneck', 'top 4', 'worst bottleneck', 'biggest bottleneck']):
-        lines = ['TOP BOTTLENECKS — Ranked by Production Time Impact', '']
+        lines = ['TOP BOTTLENECKS — Ranked by Production Time Impact and Frequency', '']
         for item in TOP_BOTTLENECKS:
             lines.append(f'  #{item["rank"]}  [{item["delay"]}]  {item["operation"]}')
             lines.append(f'      {item["description"]}')
